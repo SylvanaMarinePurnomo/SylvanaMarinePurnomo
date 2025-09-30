@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvana Marine Purnomo Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght[email protected]:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="antialiased">
+    <canvas id="star-canvas"></canvas>
+
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-orbitron font-bold tracking-wider hover:text-[#00f5ff] transition-colors">SYL</a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="nav-link text-lg hover:text-[#00f5ff] transition-colors">About</a>
+                <a href="#skills" class="nav-link text-lg hover:text-[#00f5ff] transition-colors">Skills</a>
+                <a href="#projects" class="nav-link text-lg hover:text-[#00f5ff] transition-colors">Projects</a>
+                <a href="#contact" class="nav-link text-lg hover:text-[#00f5ff] transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden z-50">
+                <div class="w-6 h-0.5 bg-white mb-1.5 transition-transform duration-300"></div>
+                <div class="w-6 h-0.5 bg-white transition-opacity duration-300"></div>
+                <div class="w-6 h-0.5 bg-white mt-1.5 transition-transform duration-300"></div>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu glass-effect fixed top-0 right-0 h-full w-64 pt-24 px-8 md:hidden z-40">
+        <nav class="flex flex-col space-y-8">
+            <a href="#about" class="nav-link-mobile text-2xl">About</a>
+            <a href="#skills" class="nav-link-mobile text-2xl">Skills</a>
+            <a href="#projects" class="nav-link-mobile text-2xl">Projects</a>
+            <a href="#contact" class="nav-link-mobile text-2xl">Contact</a>
+        </nav>
+    </div>
+
+    <main class="relative z-10">
+        <section id="home" class="min-h-screen flex items-center justify-center text-center px-4">
+            <div class="fade-in-section">
+                <p class="mt-4 text-xl md:text-2xl lg:text-3xl text-[#a855f7]">‎</p>
+                <p class="mt-4 text-xl md:text-2xl lg:text-3xl text-[#a855f7]">Hello! I am</p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-orbitron font-bold tracking-tighter uppercase">Sylvana Marine Purnomo</h1>
+                <p class="mt-4 text-xl md:text-2xl lg:text-3xl text-[#a855f7]">Looking for an Internship</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+                    "Hope & curiosity about the future seemed better than guarantees. The unknown was always so attractive to me… and still is."
+                </p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+                    - Hedy Lamarr
+                </p>
+                <!-- Social & Contact Icons -->
+                <div class="mt-12 flex justify-center space-x-8 scroll-item-fade">
+                    <a href="https://www.linkedin.com/in/sylvana-marine-purnomo-281ba6288/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/SylvanaMarinePurnomo" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:sylvana.marine@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+6282124894765" class="social-icon" aria-label="Phone Number">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1R_yfDSUfPeiOfh9gWdvLWSjBRM2NI6FD/view?usp=sharing" target="_blank" class="social-icon" aria-label="Download CV">
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+
+                <a href="#projects" class="celestial-btn mt-10 inline-block bg-transparent border-2 border-[#00f5ff] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 scroll-item-fade">
+                    Explore My Projects
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 lg:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron text-center mb-12 scroll-item-fade">About Me</h2>
+                <div class="glass-effect rounded-2xl p-8 md:p-12 max-w-4xl mx-auto scroll-item-fade">
+                    <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                        <div class="w-48 h-48 rounded-full border-4 border-[#a855f7] flex-shrink-0 mb-8 md:mb-0 scroll-item-fade">
+                           <img src="./Assets/SelfPic.jpg" alt="Sylvana Marine Purnomo" class="w-full h-full rounded-full object-cover"/>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#00f5ff] mb-4 scroll-item-fade">Hello! I am Sylvana Marine Purnomo :D</h3>
+                            <p class="text-gray-300 mb-4 scroll-item-fade">
+                                I am currently studying for a Bachelor's Degree in Computer Science at Bina Nusantara University Alam Sutera, specializing in intelligent system. I am a hardworking, team-oriented, and fast learner person. I am also writing a research paper related to Artificial Intelligence and healthcare.
+                            </p>
+                            <!-- <p class="text-gray-300 scroll-item-fade">
+                                tambahin nanti
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 lg:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron text-center mb-12 scroll-item-fade">My Skills</h2>
+                <!-- <p class="text-center max-w-2xl mx-auto text-gray-300 mb-16 scroll-item-fade">
+                    tambahin nanti
+                </p> -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">C/C++</h3>
+                        <p class="text-sm text-gray-400 mt-2">Algorithm</p>
+                    </div>
+                     <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Java</h3>
+                        <p class="text-sm text-gray-400 mt-2">Object Oriented Programming</p>
+                    </div>
+                     <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Python</h3>
+                        <p class="text-sm text-gray-400 mt-2">Machine Learning, Deep Learning, Natural Language Processing, Speech Recognition, Computer Vision</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Database</h3>
+                        <p class="text-sm text-gray-400 mt-2">SQL Server (SSMS), MySQL</p>
+                    </div>
+                     <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Front-end</h3>
+                        <p class="text-sm text-gray-400 mt-2">XML, HTML, CSS</p>
+                    </div>
+                     <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Back-end</h3>
+                        <p class="text-sm text-gray-400 mt-2">JavaScript</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Version Control Tools</h3>
+                        <p class="text-sm text-gray-400 mt-2">Git, Github</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Documentation Tools</h3>
+                        <p class="text-sm text-gray-400 mt-2">Notion</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Design Tools</h3>
+                        <p class="text-sm text-gray-400 mt-2">Figma, Excalidraw, Draw IO, Blender, Canva, ibisPaint X</p>
+                    </div>
+                     <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Programming Tools & IDE</h3>
+                        <p class="text-sm text-gray-400 mt-2">Dev C++, Visual Studio Code, Google Colab, Eclipse, Android Studio, Online GDB</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Microsoft Office</h3>
+                        <p class="text-sm text-gray-400 mt-2">Excel, Word, Power Point, OneNote, Paint</p>
+                    </div>
+                    <div class="skill-card glass-effect rounded-xl p-6 text-center scroll-item-fade">
+                        <h3 class="text-xl font-bold text-[#00f5ff]">Positive Traits</h3>
+                        <p class="text-sm text-gray-400 mt-2">Leadership, Teamwork, Critical Thinking, Fast Learner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 lg:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron text-center mb-12 scroll-item-fade">My Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="https://placehold.co/600x400/1d2842/a855f7?text=In Progress" alt="Dormates" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">Dormates (in progress)</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to provide safe, affordable, and compatible housing solutions for Indonesia’s university students. The application will let students find accommodations near campus and connect with compatible roommates using AI-powered matching system. This project is related to the 11th goals (Sustainable Cities and Comunities) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/Beestudy_Interface.png" alt="Beestudy" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">Beestudy</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to provide online-based interactive inclusive learning application. This project is related to the 4th goals (Quality of Education) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/Noctua_Interface.png" alt="Noctua" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">Noctua</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to prevent accidents while driving by detecting motorists’ microsleep. The application will provide an alarm if the driver is detected experiencing microsleep. This project is related to the 9th goals (Industry, Inovation, and Infrastructure) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/PlanWithUs_Interface.png" alt="PlantWithUs" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">PlantWithUs</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to motivate people to help improve nature with donations or volunteering. Users can also create events and support donations. This project is related to the 13-15th goals (Climate Action, Life Below Water, and Life on Land) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/Stocklys_Interface.png" alt="Stockly" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">Stocklys</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to predict stock prices to assist investors in making informed decisions. This project is related to the 8th goals (Decent Work and Economic Growth) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/IndoMaem_Interface.png" alt="IndoMaem" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">IndoMaem</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to preserve Indonesian culture, especially traditional Indonesian cuisine, by showing typical foods for each region, the manufacturing procedures, and the location of the seller. This project is related to the 4th goals (Quality of Education) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect rounded-2xl overflow-hidden border-2 border-transparent scroll-item-fade">
+                        <img src="./Assets/CAteriNgz_Interface.png" alt="CAteriNgz" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-[#00f5ff]">CAteriNgz</h3>
+                            <p class="mt-2 text-gray-300">This project is aimed to reduce direct catering orders while promoting online-based orders. This project is related to the 12th goals (Responsible Consumption and Production) of the Sustainable Development Goals (SDG).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 lg:py-32 fade-in-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-orbitron text-center mb-12 scroll-item-fade">E-mail Me</h2>
+                <div class="glass-effect rounded-2xl p-8 md:p-12 max-w-2xl mx-auto scroll-item-fade">
+                    <p class="text-center text-lg text-gray-300 mb-8">
+                        Have a project, a question, or just want to talk? Just send an e-mail!
+                    </p>
+                    <form>
+                        <div class="mb-6 scroll-item-fade">
+                            <label for="name" class="block text-[#00f5ff] mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-transparent border-b-2 border-gray-500 focus:border-[#00f5ff] text-white py-2 px-1 outline-none transition-colors">
+                        </div>
+                        <div class="mb-6 scroll-item-fade">
+                            <label for="email" class="block text-[#00f5ff] mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-transparent border-b-2 border-gray-500 focus:border-[#00f5ff] text-white py-2 px-1 outline-none transition-colors">
+                        </div>
+                        <div class="mb-8 scroll-item-fade">
+                            <label for="message" class="block text-[#00f5ff] mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-transparent border-b-2 border-gray-500 focus:border-[#00f5ff] text-white py-2 px-1 outline-none transition-colors resize-none"></textarea>
+                        </div>
+                        <div class="text-center scroll-item-fade">
+                           <button type="submit" class="celestial-btn mt-2 inline-block bg-transparent border-2 border-[#00f5ff] text-white font-semibold py-3 px-12 rounded-full transition-all duration-300">
+                                Send Transmission
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 text-center text-gray-400">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Sylvana Marine Purnomo. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js" defer></script>
+</body>
+</html>

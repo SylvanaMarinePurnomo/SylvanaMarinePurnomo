@@ -1,0 +1,95 @@
+body {
+            background-color: #0a0f1e;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        #star-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .glass-effect {
+            background: rgba(17, 25, 40, 0.75);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .celestial-btn {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 0.4s ease-in-out;
+        }
+        .celestial-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(168, 85, 247, 0.4), transparent);
+            transition: left 0.6s ease-in-out;
+            z-index: -1;
+        }
+        .celestial-btn:hover::before {
+            left: 100%;
+        }
+        .celestial-btn:hover {
+            color: #c084fc;
+        }
+        .skill-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 25px rgba(0, 245, 255, 0.3);
+        }
+        .project-card {
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.03);
+            border-color: rgba(0, 245, 255, 0.7);
+        }
+        /* Fade-In and Fade-Out on Scroll */
+        .scroll-item-fade, .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-item-fade.is-visible, .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .nav-link-active {
+            color: #00f5ff;
+            text-shadow: 0 0 8px rgba(0, 245, 255, 0.7);
+        }
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Social Icon Styling */
+        .social-icon {
+            font-size: 1.8rem;
+            color: #a855f7;
+            transition: all 0.3s ease-in-out;
+            text-shadow: 0 0 5px rgba(168, 85, 247, 0.4);
+        }
+        .social-icon:hover {
+            color: #00f5ff;
+            transform: scale(1.15) rotate(5deg);
+            text-shadow: 0 0 15px rgba(0, 245, 255, 0.8), 0 0 5px rgba(0, 245, 255, 0.5);
+        }
